@@ -13,9 +13,11 @@ class LoginPage(BasePage):
         assert "login" in current_page, "It is not Login page"
 
     def should_be_login_form(self):
+        print("---1")
         # реализуйте проверку, что есть форма логина
         assert self.is_element_present(*LoginPageLocators.LOGIN_FORM), "Login form is not presented"
 
     def should_be_register_form(self):
+        print("---2")
         # реализуйте проверку, что есть форма регистрации на странице
         assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), "Register form is not presented"

@@ -6,6 +6,10 @@ from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
+    """Опции командной строки.
+    В командную строку передается параметр вида '--language="es"'
+    По умолчанию передается параметр, включающий английский интерфейс в браузере
+    """
     parser.addoption('--language', action='store', default='en',
                      help="Choose language: ---")
 

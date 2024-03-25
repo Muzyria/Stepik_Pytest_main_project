@@ -12,6 +12,7 @@ class BasePage:
 
     def open(self):
         self.browser.get(self.url)
+        self.browser.maximize_window()
 
     def is_element_present(self, how, what):
         try:
